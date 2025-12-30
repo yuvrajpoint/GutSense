@@ -26,7 +26,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # frontend URL
+    allow_origins=["http://localhost:3000", "https://gut-sense-three.vercel.app"],  # frontend URL
     allow_credentials=True,
     allow_methods=["*"],  # allows POST, OPTIONS, etc.
     allow_headers=["*"],
